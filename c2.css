@@ -1,0 +1,146 @@
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f2f5; /* Soft background */
+  color: #333; /* Dark text color */
+}
+
+/* Container for the form */
+.container {
+  width: 100%;
+  max-width: 450px; /* Limit maximum width */
+  margin: auto; /* Centering the container */
+  padding: 30px;
+  background-color: #fff; /* White background for the form */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin-top: 100px; /* Spacing from top */
+}
+
+.nav {
+  text-align: center; /* Center navigation items */
+  margin-bottom: 20px; /* Spacing below the nav */
+}
+
+.nav a {
+  text-decoration: none;
+  color: #007BFF; /* Bootstrap blue */
+  font-weight: bold;
+}
+
+.hero {
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 26px; /* Font size for heading */
+  margin-bottom: 10px; /* Spacing below heading */
+  color: #333; /* Heading color */
+}
+
+.hero p {
+  color: #555; /* Slightly lighter text for descriptions */
+  margin-bottom: 20px; /* Spacing below paragraph */
+}
+
+/* Input styles */
+.input-icons {
+  position: relative; /* Positioning for icon */
+  margin-bottom: 20px; /* Spacing between inputs */
+}
+
+.input {
+  width: 100%; /* Full width input */
+  padding: 15px; /* Padding inside input */
+  border: 1px solid #ced4da; /* Light border color */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Font size for inputs */
+  transition: border-color 0.3s; /* Smooth border transition */
+}
+
+/* Styling for icons inside the inputs */
+.icon-center {
+  position: relative;
+}
+
+.icon-center svg {
+  position: absolute;
+  top: 50%;
+  left: 15px; /* Position of the icon */
+  transform: translateY(-50%); /* Center the icon vertically */
+  color: #888; /* Icon color */
+}
+
+/* Button styles */
+.buttons {
+  text-align: center; /* Center the buttons */
+}
+
+.btn {
+  padding: 12px 20px; /* Padding for button */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  background-color: #007BFF; /* Blue background */
+  color: #fff; /* White text */
+  font-size: 16px; /* Font size for button */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s, transform 0.2s; /* Transitions for hover */
+}
+
+.btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.btn:active {
+  transform: translateY(1px); /* Pressed effect */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .container {
+      width: 90%; /* Full width on mobile */
+      margin-top: 30px; /* Less top margin */
+  }
+  
+  .hero h1 {
+      font-size: 22px; /* Smaller font size on mobile */
+  }
+
+  .input {
+      font-size: 14px; /* Smaller input font on mobile */
+  }
+
+  .btn {
+      width: 100%; /* Full width button on mobile */
+  }
+}
+
+/* Additional styles */
+input:focus {
+  border-color: #007BFF; /* Change border color on focus */
+  outline: none; /* Remove default outline */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Glow effect */
+}
+
+.legend {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold; /* Bold for legends */
+}
+
+.gray {
+  
+  color: #555; /* Gray color for text */
+}
+
+.blue {
+  color: #007BFF; /* Blue color for text */
+  cursor: pointer; /* Pointer for clickable text */
+}
